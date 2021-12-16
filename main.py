@@ -11,7 +11,7 @@ logger.setLevel(logging.DEBUG)
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    username = message.from_user.ussername
+    username = message.from_user.username
     bot.reply_to(message, f'darova {username}')
 
 
