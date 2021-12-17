@@ -4,6 +4,7 @@ from flask import Flask, request
 from config import *
 import json
 from requests import Request, Session, post
+import os
 
 
 bot = telebot.TeleBot(token)
@@ -102,7 +103,7 @@ def redirect_message():
 if __name__ == '__main__':
     bot.remove_webhook()
     bot.set_webhook(url=app_url)
-    server.run()
+    server.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
 
 
 
