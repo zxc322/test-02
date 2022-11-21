@@ -5,9 +5,11 @@
     docker-compose up --build
 
 ###### check 
-`localhost:8000`  web
-`localhost:5050` postgres
-`localhost:15672` rabbitMQ
+web `localhost:8000`
+
+postgres `localhost:5050`
+
+rabbitMQ `localhost:15672` 
 
 ### Create tables in database by runing migrations
 
