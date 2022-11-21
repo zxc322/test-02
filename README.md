@@ -22,7 +22,7 @@ rabbitMQ `localhost:15672`
 
 ###### Next commands run from docker console
 
-1. Scrape item urls 
+1.Scrape item urls 
 
     python async_scrap_on_fastapi/scrap/urls_scrap.py
 
